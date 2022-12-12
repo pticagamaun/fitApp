@@ -13,6 +13,16 @@
 		DD68DBC329462EF1004E3FEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD68DBC229462EF1004E3FEB /* Assets.xcassets */; };
 		DD68DBC629462EF1004E3FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD68DBC429462EF1004E3FEB /* LaunchScreen.storyboard */; };
 		DD68DBCE29463A83004E3FEB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DD68DBCD29463A83004E3FEB /* .gitignore */; };
+		DD68DBD629472306004E3FEB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBD529472306004E3FEB /* HeaderView.swift */; };
+		DD68DBD9294723AA004E3FEB /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBD8294723AA004E3FEB /* UILabel + Extension.swift */; };
+		DD68DBDC2947248B004E3FEB /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBDB2947248B004E3FEB /* UIView + Extension.swift */; };
+		DD68DBDE2947292C004E3FEB /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBDD2947292C004E3FEB /* UIColor + Extension.swift */; };
+		DD68DBE229475799004E3FEB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD68DBE029475799004E3FEB /* Roboto-Medium.ttf */; };
+		DD68DBE329475799004E3FEB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD68DBE129475799004E3FEB /* Roboto-Bold.ttf */; };
+		DD68DBE5294757DB004E3FEB /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBE4294757DB004E3FEB /* UIFont + Extension.swift */; };
+		DD68DBE729475995004E3FEB /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBE629475995004E3FEB /* CalendarView.swift */; };
+		DD68DBEA29475BC5004E3FEB /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBE929475BC5004E3FEB /* CalendarCollectionView.swift */; };
+		DD68DBED29475F3B004E3FEB /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBEC29475F3B004E3FEB /* CalendarCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		DD68DBC529462EF1004E3FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD68DBC729462EF1004E3FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD68DBCD29463A83004E3FEB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DD68DBD529472306004E3FEB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DD68DBD8294723AA004E3FEB /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		DD68DBDB2947248B004E3FEB /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		DD68DBDD2947292C004E3FEB /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		DD68DBE029475799004E3FEB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		DD68DBE129475799004E3FEB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		DD68DBE4294757DB004E3FEB /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		DD68DBE629475995004E3FEB /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		DD68DBE929475BC5004E3FEB /* CalendarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
+		DD68DBEC29475F3B004E3FEB /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +79,8 @@
 			children = (
 				DD68DBCF294714C7004E3FEB /* Application */,
 				DD68DBD229471CEC004E3FEB /* MainModule */,
-				DD68DBD0294714D8004E3FEB /* Resources */,
+				DD68DBD729472394004E3FEB /* Extension */,
+				DD68DBD0294714D8004E3FEB /* Other */,
 			);
 			path = fitApp;
 			sourceTree = "<group>";
@@ -73,22 +94,87 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		DD68DBD0294714D8004E3FEB /* Resources */ = {
+		DD68DBD0294714D8004E3FEB /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DD68DBDF29475799004E3FEB /* Fonts */,
 				DD68DBC229462EF1004E3FEB /* Assets.xcassets */,
 				DD68DBC429462EF1004E3FEB /* LaunchScreen.storyboard */,
 				DD68DBC729462EF1004E3FEB /* Info.plist */,
 			);
-			path = Resources;
+			path = Other;
 			sourceTree = "<group>";
 		};
 		DD68DBD229471CEC004E3FEB /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				DD68DBBD29462EDF004E3FEB /* MainViewController.swift */,
+				DD68DBD32947229D004E3FEB /* View */,
+				DD68DBD4294722A7004E3FEB /* Controller */,
 			);
 			path = MainModule;
+			sourceTree = "<group>";
+		};
+		DD68DBD32947229D004E3FEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DBEB29475F2B004E3FEB /* Cell */,
+				DD68DBE829475BB2004E3FEB /* SubView */,
+				DD68DBD529472306004E3FEB /* HeaderView.swift */,
+				DD68DBE629475995004E3FEB /* CalendarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD68DBD4294722A7004E3FEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DBBD29462EDF004E3FEB /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD68DBD729472394004E3FEB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DBDA294723B4004E3FEB /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD68DBDA294723B4004E3FEB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DBD8294723AA004E3FEB /* UILabel + Extension.swift */,
+				DD68DBDB2947248B004E3FEB /* UIView + Extension.swift */,
+				DD68DBDD2947292C004E3FEB /* UIColor + Extension.swift */,
+				DD68DBE4294757DB004E3FEB /* UIFont + Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		DD68DBDF29475799004E3FEB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DBE029475799004E3FEB /* Roboto-Medium.ttf */,
+				DD68DBE129475799004E3FEB /* Roboto-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DD68DBE829475BB2004E3FEB /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DBE929475BC5004E3FEB /* CalendarCollectionView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		DD68DBEB29475F2B004E3FEB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DBEC29475F3B004E3FEB /* CalendarCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD68DBE229475799004E3FEB /* Roboto-Medium.ttf in Resources */,
 				DD68DBCE29463A83004E3FEB /* .gitignore in Resources */,
+				DD68DBE329475799004E3FEB /* Roboto-Bold.ttf in Resources */,
 				DD68DBC629462EF1004E3FEB /* LaunchScreen.storyboard in Resources */,
 				DD68DBC329462EF1004E3FEB /* Assets.xcassets in Resources */,
 			);
@@ -162,9 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD68DBE5294757DB004E3FEB /* UIFont + Extension.swift in Sources */,
+				DD68DBDE2947292C004E3FEB /* UIColor + Extension.swift in Sources */,
 				DD68DBBE29462EDF004E3FEB /* MainViewController.swift in Sources */,
+				DD68DBD9294723AA004E3FEB /* UILabel + Extension.swift in Sources */,
+				DD68DBDC2947248B004E3FEB /* UIView + Extension.swift in Sources */,
+				DD68DBE729475995004E3FEB /* CalendarView.swift in Sources */,
+				DD68DBEA29475BC5004E3FEB /* CalendarCollectionView.swift in Sources */,
 				DD68DBBA29462EDF004E3FEB /* AppDelegate.swift in Sources */,
+				DD68DBED29475F3B004E3FEB /* CalendarCollectionViewCell.swift in Sources */,
 				DD68DBBC29462EDF004E3FEB /* SceneDelegate.swift in Sources */,
+				DD68DBD629472306004E3FEB /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = fitApp/Resources/Info.plist;
+				INFOPLIST_FILE = fitApp/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -331,7 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = fitApp/Resources/Info.plist;
+				INFOPLIST_FILE = fitApp/Other/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
