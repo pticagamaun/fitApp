@@ -22,6 +22,7 @@ extension UILabel {
         self.text = text
         self.textColor = textColor
         self.numberOfLines = 2
+        self.minimumScaleFactor = 10
         guard let fontText = font else {return}
         self.font = fontText
     }
