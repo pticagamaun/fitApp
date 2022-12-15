@@ -7,8 +7,7 @@
 
 import UIKit
 
-class CalendarCollectionView: UICollectionView {
-    
+final class CalendarCollectionView: UICollectionView {
     
     private let flowLayout = UICollectionViewFlowLayout()
     
@@ -22,11 +21,11 @@ class CalendarCollectionView: UICollectionView {
     }
     
     private func configure() {
-        backgroundColor = .clear
+        flowLayout.minimumInteritemSpacing = 5
+        backgroundColor = .none
         register(CalendarCollectionViewCell.self, forCellWithReuseIdentifier: CalendarCollectionViewCell.idCalendarCell)
         delegate = self
         dataSource = self
-        flowLayout.minimumLineSpacing = 3
     }
 }
 
@@ -40,9 +39,12 @@ extension CalendarCollectionView: UICollectionViewDelegate, UICollectionViewData
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width / 9,
-               height: collectionView.frame.height)
+        CGSize(width: collectionView.frame.width / 9, height: collectionView.frame.height)
     }
     
 }

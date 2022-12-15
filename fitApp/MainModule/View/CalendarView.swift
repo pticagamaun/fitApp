@@ -23,7 +23,7 @@ final class CalendarView: UIView {
     
     
     private func configure() {
-        backgroundColor = .specialDarkGreen
+        backgroundColor = .specialGreen
         layer.cornerRadius = 15
         addView(calendarCollection)
     }

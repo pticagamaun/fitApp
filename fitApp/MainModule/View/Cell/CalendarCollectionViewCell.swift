@@ -28,6 +28,8 @@ final class CalendarCollectionViewCell: UICollectionViewCell {
     private func setupCell() {
         backgroundColor = .specialYellow
         layer.cornerRadius = 10
+        dateOfDayLabel.textAlignment = .center
+        numberOfDayLabel.textAlignment = .center
         addView(dateOfDayLabel)
         addView(numberOfDayLabel)
     }
@@ -37,7 +39,7 @@ final class CalendarCollectionViewCell: UICollectionViewCell {
 extension CalendarCollectionViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            dateOfDayLabel.topAnchor.constraint(equalTo: topAnchor, constant: 7),
+            dateOfDayLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             dateOfDayLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             numberOfDayLabel.centerXAnchor.constraint(equalTo: centerXAnchor),

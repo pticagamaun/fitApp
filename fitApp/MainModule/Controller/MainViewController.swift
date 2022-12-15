@@ -10,6 +10,11 @@ import UIKit
 final class MainViewController: UIViewController {
     
     private let headerView = HeaderView()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        headerView.setCornerRadius()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

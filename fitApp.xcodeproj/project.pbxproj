@@ -23,6 +23,9 @@
 		DD68DBE729475995004E3FEB /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBE629475995004E3FEB /* CalendarView.swift */; };
 		DD68DBEA29475BC5004E3FEB /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBE929475BC5004E3FEB /* CalendarCollectionView.swift */; };
 		DD68DBED29475F3B004E3FEB /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBEC29475F3B004E3FEB /* CalendarCollectionViewCell.swift */; };
+		DD68DBF029479D04004E3FEB /* AddWorkoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBEF29479D03004E3FEB /* AddWorkoutButton.swift */; };
+		DD68DBF2294A442D004E3FEB /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBF1294A442D004E3FEB /* WeatherView.swift */; };
+		DD68DBF4294A4F81004E3FEB /* WorkoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBF3294A4F81004E3FEB /* WorkoutTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		DD68DBE629475995004E3FEB /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		DD68DBE929475BC5004E3FEB /* CalendarCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
 		DD68DBEC29475F3B004E3FEB /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD68DBEF29479D03004E3FEB /* AddWorkoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutButton.swift; sourceTree = "<group>"; };
+		DD68DBF1294A442D004E3FEB /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		DD68DBF3294A4F81004E3FEB /* WorkoutTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 				DD68DBE829475BB2004E3FEB /* SubView */,
 				DD68DBD529472306004E3FEB /* HeaderView.swift */,
 				DD68DBE629475995004E3FEB /* CalendarView.swift */,
+				DD68DBF1294A442D004E3FEB /* WeatherView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 		DD68DBD729472394004E3FEB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DD68DBEE29479CAB004E3FEB /* Unique */,
 				DD68DBDA294723B4004E3FEB /* UIKit */,
 			);
 			path = Extension;
@@ -165,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				DD68DBE929475BC5004E3FEB /* CalendarCollectionView.swift */,
+				DD68DBF3294A4F81004E3FEB /* WorkoutTableView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -175,6 +184,14 @@
 				DD68DBEC29475F3B004E3FEB /* CalendarCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD68DBEE29479CAB004E3FEB /* Unique */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DBEF29479D03004E3FEB /* AddWorkoutButton.swift */,
+			);
+			path = Unique;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,10 +272,13 @@
 				DD68DBBE29462EDF004E3FEB /* MainViewController.swift in Sources */,
 				DD68DBD9294723AA004E3FEB /* UILabel + Extension.swift in Sources */,
 				DD68DBDC2947248B004E3FEB /* UIView + Extension.swift in Sources */,
+				DD68DBF2294A442D004E3FEB /* WeatherView.swift in Sources */,
 				DD68DBE729475995004E3FEB /* CalendarView.swift in Sources */,
 				DD68DBEA29475BC5004E3FEB /* CalendarCollectionView.swift in Sources */,
 				DD68DBBA29462EDF004E3FEB /* AppDelegate.swift in Sources */,
+				DD68DBF4294A4F81004E3FEB /* WorkoutTableView.swift in Sources */,
 				DD68DBED29475F3B004E3FEB /* CalendarCollectionViewCell.swift in Sources */,
+				DD68DBF029479D04004E3FEB /* AddWorkoutButton.swift in Sources */,
 				DD68DBBC29462EDF004E3FEB /* SceneDelegate.swift in Sources */,
 				DD68DBD629472306004E3FEB /* HeaderView.swift in Sources */,
 			);
@@ -406,6 +426,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,7 +436,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -433,6 +454,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,7 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
