@@ -35,10 +35,10 @@ final class WeatherView: UIView {
     private func setupView() {
         backgroundColor = .white
         layer.cornerRadius = 15
-        addShadowOnView()
         addView(weatherImage)
         addView(weatherTitleLabel)
         addView(weatherDescriptionLabel)
+        addShadowOnView()
     }
 }
 

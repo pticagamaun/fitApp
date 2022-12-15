@@ -9,7 +9,6 @@ import UIKit
 
 final class CalendarCollectionView: UICollectionView {
     
-    
     private let flowLayout = UICollectionViewFlowLayout()
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -45,8 +44,7 @@ extension CalendarCollectionView: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.frame.width / 8.5,
-               height: collectionView.frame.height)
+        CGSize(width: collectionView.frame.width / 9, height: collectionView.frame.height)
     }
     
 }

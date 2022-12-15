@@ -47,7 +47,7 @@ final class HeaderView: UIView {
         print("addWorkoutTapped")
     }
     
-    public func setCornerRadius() {
+    func setCornerRadius() {
         profileImage.layer.cornerRadius = profileImage.frame.height / 2
     }
 }

@@ -29,10 +29,10 @@ final class AddWorkoutButton: UIButton {
         setImage(UIImage(named: "plus")?.withRenderingMode(.alwaysTemplate), for: .normal)
         tintColor = .specialDarkGreen
         layer.cornerRadius = 15
-        imageTitleConfiguration()
+        buttonConfiguration()
     }
     
-    private func imageTitleConfiguration() {
+    private func buttonConfiguration() {
         if #available(iOS 15.0, *) {
             var configuration = UIButton.Configuration.plain()
             configuration.imagePlacement = .top
