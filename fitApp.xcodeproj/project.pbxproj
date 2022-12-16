@@ -37,6 +37,8 @@
 		DD68DC0F294CF542004E3FEB /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DC0E294CF542004E3FEB /* SliderView.swift */; };
 		DD68DC12294CF5DC004E3FEB /* GreenSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DC11294CF5DC004E3FEB /* GreenSlider.swift */; };
 		DD68DC14294CF7AE004E3FEB /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DC13294CF7AE004E3FEB /* GreenButton.swift */; };
+		DD68DC17294CFA54004E3FEB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DC16294CFA54004E3FEB /* MainTabBarController.swift */; };
+		DD68DC1A294CFDC4004E3FEB /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DC19294CFDC4004E3FEB /* StatisticsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		DD68DC0E294CF542004E3FEB /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		DD68DC11294CF5DC004E3FEB /* GreenSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenSlider.swift; sourceTree = "<group>"; };
 		DD68DC13294CF7AE004E3FEB /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
+		DD68DC16294CFA54004E3FEB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DD68DC19294CFDC4004E3FEB /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +109,11 @@
 		DD68DBB829462EDF004E3FEB /* fitApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD68DC15294CFA29004E3FEB /* NavigationModule */,
 				DD68DBCF294714C7004E3FEB /* Application */,
 				DD68DBD229471CEC004E3FEB /* MainModule */,
 				DD68DBFD294CE8C0004E3FEB /* NewWorkoutModule */,
+				DD68DC18294CFD98004E3FEB /* StatisticsModule */,
 				DD68DBD729472394004E3FEB /* Extension */,
 				DD68DBD0294714D8004E3FEB /* Other */,
 			);
@@ -259,6 +265,22 @@
 			name = SubView;
 			sourceTree = "<group>";
 		};
+		DD68DC15294CFA29004E3FEB /* NavigationModule */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DC16294CFA54004E3FEB /* MainTabBarController.swift */,
+			);
+			path = NavigationModule;
+			sourceTree = "<group>";
+		};
+		DD68DC18294CFD98004E3FEB /* StatisticsModule */ = {
+			isa = PBXGroup;
+			children = (
+				DD68DC19294CFDC4004E3FEB /* StatisticsViewController.swift */,
+			);
+			path = StatisticsModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,11 +369,13 @@
 				DD68DC09294CEFBD004E3FEB /* BrownTextField.swift in Sources */,
 				DD68DBEA29475BC5004E3FEB /* CalendarCollectionView.swift in Sources */,
 				DD68DBBA29462EDF004E3FEB /* AppDelegate.swift in Sources */,
+				DD68DC1A294CFDC4004E3FEB /* StatisticsViewController.swift in Sources */,
 				DD68DBFF294CE8E2004E3FEB /* NewWorkoutViewController.swift in Sources */,
 				DD68DBF4294A4F81004E3FEB /* WorkoutTableView.swift in Sources */,
 				DD68DC01294CEAEF004E3FEB /* CloseButton.swift in Sources */,
 				DD68DC07294CEED9004E3FEB /* NameView.swift in Sources */,
 				DD68DBED29475F3B004E3FEB /* CalendarCollectionViewCell.swift in Sources */,
+				DD68DC17294CFA54004E3FEB /* MainTabBarController.swift in Sources */,
 				DD68DBF029479D04004E3FEB /* AddWorkoutButton.swift in Sources */,
 				DD68DBBC29462EDF004E3FEB /* SceneDelegate.swift in Sources */,
 				DD68DC14294CF7AE004E3FEB /* GreenButton.swift in Sources */,

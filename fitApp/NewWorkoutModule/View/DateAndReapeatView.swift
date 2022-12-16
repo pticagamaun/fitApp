@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DateAndReapeatView: UIView {
+final class DateAndReapeatView: UIView {
     
     private let dateAndRepeatLabel = UILabel(text: "Date and repeat", textColor: .specialLine, font: .robotoMedium14)
     private let subView: UIView = {
@@ -22,6 +22,7 @@ class DateAndReapeatView: UIView {
        let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
         datePicker.tintColor = .specialGreen
+        datePicker.subviews[0].subviews[0].subviews[0].alpha = 0
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         return datePicker
     }()
@@ -83,7 +84,6 @@ extension DateAndReapeatView {
             repeatStackView.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 10),
             repeatStackView.trailingAnchor.constraint(equalTo: subView.trailingAnchor, constant: -10),
             repeatStackView.heightAnchor.constraint(equalToConstant: 30),
-            
         ])
     }
 }

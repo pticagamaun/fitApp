@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SliderView: UIView {
+final class SliderView: UIView {
     
     private let nameLabel = UILabel(text: "Name",
                                     textColor: .specialBlack,

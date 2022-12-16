@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BrownTextField: UITextField {
+final class BrownTextField: UITextField {
     
     
     override init(frame: CGRect) {

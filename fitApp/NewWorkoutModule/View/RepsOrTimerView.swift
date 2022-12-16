@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RepsOrTimerView: UIView {
+final class RepsOrTimerView: UIView {
     
     private let repsOrTimerLabel = UILabel(text: "Reps or timer", textColor: .specialBlack, font: .robotoMedium14)
     private let subView: UIView = {

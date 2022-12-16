@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GreenSlider: UISlider {
+final class GreenSlider: UISlider {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

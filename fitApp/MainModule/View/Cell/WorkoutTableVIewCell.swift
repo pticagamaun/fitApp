@@ -12,7 +12,7 @@ final class WorkoutTableViewCell: UITableViewCell {
     static let idWorkoutCell = "idWorkoutCell"
     private let backgroundCellView: UIView = {
         let view = UIView()
-        view.backgroundColor = .specialBackgroundCell
+        view.backgroundColor = .specialBrown
         view.layer.cornerRadius = 10
         return view
     }()
