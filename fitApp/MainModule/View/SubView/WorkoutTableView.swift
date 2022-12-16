@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WorkoutTableView: UITableView {
+final class WorkoutTableView: UITableView {
     
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -19,21 +19,32 @@ class WorkoutTableView: UITableView {
     }
     
     private func setupView() {
-        backgroundColor = .clear
+        backgroundColor = .none
+        bounces = false
+        allowsSelection = false
+        separatorColor = .clear
+        showsVerticalScrollIndicator = false
         delegate = self
         dataSource = self
-        register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        register(WorkoutTableViewCell.self, forCellReuseIdentifier: WorkoutTableViewCell.idWorkoutCell)
     }
     
 }
 
 extension WorkoutTableView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        8
+        3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: WorkoutTableViewCell.idWorkoutCell,
+                                                       for: indexPath) as? WorkoutTableViewCell else {
+            return UITableViewCell()
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        100
     }
 }

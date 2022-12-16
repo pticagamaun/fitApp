@@ -26,6 +26,8 @@
 		DD68DBF029479D04004E3FEB /* AddWorkoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBEF29479D03004E3FEB /* AddWorkoutButton.swift */; };
 		DD68DBF2294A442D004E3FEB /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBF1294A442D004E3FEB /* WeatherView.swift */; };
 		DD68DBF4294A4F81004E3FEB /* WorkoutTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBF3294A4F81004E3FEB /* WorkoutTableView.swift */; };
+		DD68DBF8294BE266004E3FEB /* WorkoutTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBF7294BE266004E3FEB /* WorkoutTableVIewCell.swift */; };
+		DD68DBFA294CE368004E3FEB /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD68DBF9294CE368004E3FEB /* UIStackView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		DD68DBEF29479D03004E3FEB /* AddWorkoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutButton.swift; sourceTree = "<group>"; };
 		DD68DBF1294A442D004E3FEB /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		DD68DBF3294A4F81004E3FEB /* WorkoutTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableView.swift; sourceTree = "<group>"; };
+		DD68DBF7294BE266004E3FEB /* WorkoutTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableVIewCell.swift; sourceTree = "<group>"; };
+		DD68DBF9294CE368004E3FEB /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 				DD68DBDB2947248B004E3FEB /* UIView + Extension.swift */,
 				DD68DBDD2947292C004E3FEB /* UIColor + Extension.swift */,
 				DD68DBE4294757DB004E3FEB /* UIFont + Extension.swift */,
+				DD68DBF9294CE368004E3FEB /* UIStackView + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				DD68DBEC29475F3B004E3FEB /* CalendarCollectionViewCell.swift */,
+				DD68DBF7294BE266004E3FEB /* WorkoutTableVIewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 				DD68DBE5294757DB004E3FEB /* UIFont + Extension.swift in Sources */,
 				DD68DBDE2947292C004E3FEB /* UIColor + Extension.swift in Sources */,
 				DD68DBBE29462EDF004E3FEB /* MainViewController.swift in Sources */,
+				DD68DBF8294BE266004E3FEB /* WorkoutTableVIewCell.swift in Sources */,
 				DD68DBD9294723AA004E3FEB /* UILabel + Extension.swift in Sources */,
 				DD68DBDC2947248B004E3FEB /* UIView + Extension.swift in Sources */,
 				DD68DBF2294A442D004E3FEB /* WeatherView.swift in Sources */,
@@ -281,6 +288,7 @@
 				DD68DBF029479D04004E3FEB /* AddWorkoutButton.swift in Sources */,
 				DD68DBBC29462EDF004E3FEB /* SceneDelegate.swift in Sources */,
 				DD68DBD629472306004E3FEB /* HeaderView.swift in Sources */,
+				DD68DBFA294CE368004E3FEB /* UIStackView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
