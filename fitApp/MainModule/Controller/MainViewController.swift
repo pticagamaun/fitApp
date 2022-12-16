@@ -27,9 +27,20 @@ final class MainViewController: UIViewController {
     private func setupView() {
         view.addView(headerView)
         view.addView(workoutTableView)
+        headerView.headerViewDelegate = self
     }
 }
 
+//MARK: - HeaderViewProtocol
+extension MainViewController: HeaderViewProtocol {
+    func addWorkout() {
+        let newWorkoutVC = NewWorkoutViewController()
+        newWorkoutVC.modalPresentationStyle = .fullScreen
+        present(newWorkoutVC, animated: true)
+    }
+}
+
+//MARK: - Constraints
 extension MainViewController {
     private func setConstraints() {
         NSLayoutConstraint.activate([

@@ -36,6 +36,7 @@ final class CalendarCollectionViewCell: UICollectionViewCell {
     
 }
 
+//MARK: - Constraints
 extension CalendarCollectionViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([

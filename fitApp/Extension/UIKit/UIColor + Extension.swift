@@ -18,4 +18,5 @@ extension UIColor {
     static let specialLine = #colorLiteral(red: 0.761189878, green: 0.7422975898, blue: 0.6815395951, alpha: 1)
     static let specialBackgroundCell = #colorLiteral(red: 0.9019607843, green: 0.8823529412, blue: 0.8196078431, alpha: 1)
     static let specialLightBrown = #colorLiteral(red: 0.9411764706, green: 0.9294117647, blue: 0.8862745098, alpha: 1)
+    static let specialBrown = #colorLiteral(red: 0.9019607843, green: 0.8823529412, blue: 0.8196078431, alpha: 1)
 }

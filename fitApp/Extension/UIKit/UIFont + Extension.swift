@@ -24,5 +24,5 @@ extension UIFont {
     static let robotoBold18 = UIFont(name: "Roboto-Bold", size: 18)
     static let robotoBold20 = UIFont(name: "Roboto-Bold", size: 20)
     static let robotoBold22 = UIFont(name: "Roboto-Bold", size: 22)
-    
+    static let robotoBold24 = UIFont(name: "Roboto-Bold", size: 24)
 }

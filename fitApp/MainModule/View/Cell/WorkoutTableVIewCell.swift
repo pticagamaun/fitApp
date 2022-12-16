@@ -69,6 +69,7 @@ final class WorkoutTableViewCell: UITableViewCell {
     }
 }
 
+//MARK: - Constraints
 extension WorkoutTableViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([

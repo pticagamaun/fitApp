@@ -31,6 +31,7 @@ final class WorkoutTableView: UITableView {
     
 }
 
+//MARK: - UITableViewDataSource, UITableViewDelegate
 extension WorkoutTableView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         3

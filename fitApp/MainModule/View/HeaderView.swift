@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol HeaderViewProtocol: AnyObject {
+    func addWorkout()
+}
+
 final class HeaderView: UIView {
     
+    weak var headerViewDelegate: HeaderViewProtocol?
     private let profileImage: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .specialGray
@@ -46,7 +51,7 @@ final class HeaderView: UIView {
     }
     
     @objc private func addWorkoutTapped() {
-        print("addWorkoutTapped")
+        headerViewDelegate?.addWorkout()
     }
     
     func setCornerRadius() {
@@ -54,6 +59,7 @@ final class HeaderView: UIView {
     }
 }
 
+//MARK: - Constraints
 extension HeaderView {
     private func setConstraints() {
         NSLayoutConstraint.activate([
