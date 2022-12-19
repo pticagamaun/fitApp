@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol HeaderViewProtocol: AnyObject {
+    func addWorkout()
+}
+
 final class HeaderView: UIView {
     
+    weak var headerViewDelegate: HeaderViewProtocol?
     private let profileImage: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .specialGray
@@ -19,10 +24,11 @@ final class HeaderView: UIView {
     }()
     private let nameLabel = UILabel(text: "Your Name",
                             textColor: .specialBlack,
-                            font: .robotoMedim24)
+                            font: .robotoMedium24)
     private let calendarView = CalendarView()
     private lazy var addWorkoutButton = AddWorkoutButton(self, selector: #selector(addWorkoutTapped))
     private let weatherView = WeatherView()
+    private let workoutTodayLabel = UILabel(text: "Workout today", textColor: .specialLine, font: .robotoMedium14)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,10 +47,11 @@ final class HeaderView: UIView {
         addView(nameLabel)
         addView(addWorkoutButton)
         addView(weatherView)
+        addView(workoutTodayLabel)
     }
     
     @objc private func addWorkoutTapped() {
-        print("addWorkoutTapped")
+        headerViewDelegate?.addWorkout()
     }
     
     func setCornerRadius() {
@@ -52,6 +59,7 @@ final class HeaderView: UIView {
     }
 }
 
+//MARK: - Constraints
 extension HeaderView {
     private func setConstraints() {
         NSLayoutConstraint.activate([
@@ -79,6 +87,10 @@ extension HeaderView {
             weatherView.leadingAnchor.constraint(equalTo: addWorkoutButton.trailingAnchor, constant: 5),
             weatherView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
             weatherView.heightAnchor.constraint(equalToConstant: 90),
+            
+            workoutTodayLabel.topAnchor.constraint(equalTo: addWorkoutButton.bottomAnchor, constant: 10),
+            workoutTodayLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+            workoutTodayLabel.heightAnchor.constraint(equalToConstant: 16)
         ])
     }
 }

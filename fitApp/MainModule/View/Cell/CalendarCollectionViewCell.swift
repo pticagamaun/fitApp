@@ -13,7 +13,7 @@ final class CalendarCollectionViewCell: UICollectionViewCell {
     private let dateOfDayLabel = UILabel(text: "We")
     private let numberOfDayLabel = UILabel(text: "20",
                                            textColor: .specialBlack,
-                                           font: .robotoMedim20)
+                                           font: .robotoMedium20)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,6 +36,7 @@ final class CalendarCollectionViewCell: UICollectionViewCell {
     
 }
 
+//MARK: - Constraints
 extension CalendarCollectionViewCell {
     private func setConstraints() {
         NSLayoutConstraint.activate([

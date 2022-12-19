@@ -17,10 +17,10 @@ final class WeatherView: UIView {
     
     private let weatherTitleLabel = UILabel(text: "Sunny",
                                             textColor: .specialBlack,
-                                            font: .robotoMedim18)
+                                            font: .robotoMedium18)
     private let weatherDescriptionLabel = UILabel(text: "Nice weather to workout outside!",
                                                   textColor: .systemGray,
-                                                  font: .robotoMedim14)
+                                                  font: .robotoMedium14)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,6 +42,7 @@ final class WeatherView: UIView {
     }
 }
 
+//MARK: - Constraints
 extension WeatherView {
     private func setConstraints() {
         NSLayoutConstraint.activate([

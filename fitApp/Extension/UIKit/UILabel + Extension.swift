@@ -14,7 +14,7 @@ extension UILabel {
         self.text = text
         self.textColor = .specialBlack
         self.numberOfLines = 2
-        self.font = .robotoMedim16
+        self.font = .robotoMedium16
     }
     
     convenience init(text: String, textColor: UIColor, font: UIFont?) {
